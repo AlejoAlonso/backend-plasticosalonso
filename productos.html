@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de productos industriales fabricados.">
+    <title>Productos - Materiales Industriales Avanzados</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Header simple premium -->
+    <header class="hero-simple" data-aos="fade-down">
+        <h1>Productos Industriales</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de productos estática premium -->
+    <section id="productos" class="productos-section-static" data-aos="zoom-in">
+        <h2>Catálogo Completo</h2>
+        <div class="productos-grid" id="productos-static-grid">
+            <!-- Productos cargados por JS -->
+        </div>
+    </section>
+
+    <!-- Modal premium mejorado -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <img id="modal-imagen" src="" alt="" onclick="zoomImagen()">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descripcion"></p>
+            <p id="modal-precio"></p>
+            <button onclick="agregarAlCarritoDesdeModal()">Agregar al Carrito</button>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Footer premium -->
+    <footer>
+        <p>&copy; 2023 Materiales Industriales Avanzados. <a href="index.html">Volver al Inicio</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
